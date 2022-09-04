@@ -39,10 +39,6 @@ public class dataComparator {
                 3.打印异常值；即不同的值打印出来
     */
     public static void datasCompare(String str1, String str2){
-//            String str1 =str11.toString();
-//            String str2 =str22.toString();
-//        System.out.println(rsList1);
-//        System.out.println(rsList2);
         try {
             File ff = new File("D:\\stdout.log");
             if (!ff.exists()) {
@@ -93,13 +89,8 @@ public class dataComparator {
                             FileWriter.write(key + ": " + map1.get(key));
                             FileWriter.write("\n");
                             FileWriter.write(key + ": " + map2.get(key));
-                            FileWriter.write("\n");
-
                         }
-
                     }
-
-
                 }
             }
             FileWriter.flush();
